@@ -33,9 +33,5 @@ app.get("/songs/:album", (req, res) => {
   );
 });
 
-app.get("/", (req, res) => {
-  res.json("{hi: hi}");
-});
-
 const PORT = process.env.PORT || 3002;
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
